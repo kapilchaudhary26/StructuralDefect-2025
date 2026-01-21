@@ -5,7 +5,7 @@ import datetime as dt
 import os
 
 # Configure the model
-gemini_api_key = os.getenv('GOOGLE_API_KEY2')
+gemini_api_key = os.getenv('google-api-key-2')
 genai.configure(api_key = gemini_api_key)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
