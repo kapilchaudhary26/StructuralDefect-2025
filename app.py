@@ -90,7 +90,7 @@ if st.button('Generate Inspection Report'):
         response = model.generate_content([prompt, *images],
                                           generation_config={'temperature': 0.9})
         
-        st.session_state.report_text = response.text.replace("<br>", "\n")
+    
 
 
 if st.session_state.report_text:
